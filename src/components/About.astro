@@ -1,0 +1,52 @@
+---
+const bio = `
+  I am a self-taught frontend developer who discovered my passion for web development during the COVID-19 pandemic. With a background in Electrical and Electronic Engineering, I bring a unique perspective to my work, combining analytical skills with creative problem-solving. Over the past three years, I have honed my skills in frontend development, working on various projects that showcase my ability to create beautiful, responsive websites.
+`;
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro"];
+---
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>{bio}</p>
+    <h3>Skills</h3>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  .about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .about-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .about-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .about-section ul li {
+    background-color: #eaeaea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
